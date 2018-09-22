@@ -22,3 +22,6 @@ How to get the classification image?
 run rnn_fetch.py, it should generate a file called out_put_array.npy in ./result foler
 copy out_put_array.npy to ./T_SNE, in the same directory with the tsne.py
 run tsne.py, you should be able to see the classification result like this
+
+![image](https://github.com/fhbzc/VAE_based_Behavior_Analysis/blob/master/Images/READMEIMAGE.png)
+
