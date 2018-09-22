@@ -18,10 +18,3 @@ run rnn_fetch.py, it should generate a file called out_put_array.npy in ./result
 copy out_put_array.npy to ./T_SNE, in the same directory with the tsne.py
 run tsne.py, you should be able to see the classification result
 
-
-	Let me if you have any problems implementing the network.
-
-
-
-Hongbo Fang
-hongbofang@zju.edu.cn
