@@ -2,7 +2,7 @@
 
 
 Declaration: The code comes from a open-source project of Google(original link here https://github.com/tensorflow/magenta/tree/master/magenta/models/sketch_rnn)
-I modify it to apply it in agents behaviors analysis
+I modify and apply it in agents behaviors analysis
 
 
 How to generate trainable data?
