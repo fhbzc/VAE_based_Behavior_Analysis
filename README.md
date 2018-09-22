@@ -5,7 +5,7 @@ I modify it and apply it in agents behaviors analysis
 Instructions
 ========
 
-How to generate trainable data:
+How to generate trainable data?
 -------
 
 
@@ -14,14 +14,14 @@ How to generate trainable data:
   valid_dataset.npz
   test_dataset.npz
 
-How to train the model:
+How to train the model?
 -------
 
 
   run rnn_train.py, the trained variable should be stored in log folder in the same directory as rnn_train.py
 
 
-How to get the classification image
+How to get the classification image?
 -------
 
   run rnn_fetch.py, it should generate a file called out_put_array.npy in ./result foler
