@@ -25,6 +25,8 @@ run tsne.py, you should be able to see the classification result like this
 
 ![image](https://github.com/fhbzc/VAE_based_Behavior_Analysis/blob/master/Images/READMEIMAGE.png)
 
+The code is tested under Python 2.7.12 and tensorflow 1.4.1
+
 Some other questions
  =======
 
