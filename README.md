@@ -8,18 +8,18 @@ I modify and apply it in agents behaviors analysis
 How to generate trainable data?
 -------
 
-run GroupClassificationColor.py, it should generate 3 files: 
+run <b>GroupClassificationColor.py</b>, it should generate 3 files: 
 train_dataset.npz
 valid_dataset.npz
 test_dataset.npz
 
 How to train the model?
 ---------
-run rnn_train.py, the trained variable should be stored in log folder in the same directory as rnn_train.py
+run <b>rnn_train.py</b>, the trained variable should be stored in log folder in the same directory as rnn_train.py
 
 How to get the classification image?
 -----
-run rnn_fetch.py, it should generate a file called out_put_array.npy in ./result foler
+run <b>rnn_fetch.py</b>, it should generate a file called out_put_array.npy in ./result foler
 copy out_put_array.npy to ./T_SNE, in the same directory with the tsne.py
 run tsne.py, you should be able to see the classification result like this
 
@@ -32,7 +32,7 @@ Some other questions
 
  What does GroupClassificationColor.py do?
  -------
- GroupClassificationColor.py process the original data into valid input data, it's worth pointing out that GroupClassificationColor.py will also add a tag for each player, the tag stands for the player type index, and this type index is retrieved by observing agents' player, not by neural network, and we will test our observation-based classification against neural network retrieved classification.
+ GroupClassificationColor.py processes the original data into valid input data, it's worth pointing out that GroupClassificationColor.py will also add a tag for each player, the tag stands for the player type index, and this type index is retrieved by observing agents' player, not by neural network, and we will test our observation-based classification against neural network retrieved classification.
 
       
  How do I read the classification result?
