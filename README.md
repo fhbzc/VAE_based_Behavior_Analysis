@@ -41,9 +41,9 @@ A csv result which shows the newtork performance for each agents.
     An example of this csv is this:
 
 
-  | id          | group_type    | prediction accuracy  |  total accuracy  |  tsne_x  |  tsne_y  |
-  |:----------:  |:--------:     |:-----------:      |:----------:    |:----:      |:-----:   |
-  |0            |  1            | 0.8                  |  0.9             |  0.013   |   0.001  |
+  | id          | group_type    | prediction accuracy  |  total accuracy|tsne_x|  tsne_y  | action_0_prediction| action_0_actual| ... |
+  |:----------:  |:--------:     |:-----------:      |:----------:    |:----:      |:-----:   |:-----:   |:-----:   | :-----:   | 
+  |0            |  1            | 0.8                  |  0.9             |  0.013   |   0.001  | 0.908 | 1| ... |
 
 
            
@@ -53,7 +53,8 @@ The meaning of each column:
 <b>prediction accuracy</b> the accuracy of network's prediction on agents furture actions.  
 <b>total accuracy</b> the total accuracy of network's "prediction" over agents actions, note under the default setting, the first 10 steps are used to encode the strategy, which means the first 10 action "prediction" output is actually reconstruction.  
  <b>tsne_x, tsne_y</b> the cordinates of agents strategy in a 2-D space, derived with t_sne.  
-
+<b> action_x_prediction </b> predicted possibility for this player to hunt stag(action 1) at time step x  
+<b> action_x_actual </b> actual action of this player at time step x
    
 
 *out_put_array.npy*  
