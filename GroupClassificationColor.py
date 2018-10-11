@@ -52,7 +52,8 @@
 import csv
 import numpy as np
 import random
-csv_reader = csv.reader(open("original_data.csv"))
+dire_prefix = "./data/"
+csv_reader = csv.reader(open(dire_prefix+"original_data.csv"))
 content = []
 for row in csv_reader:
     content.append(row)
@@ -405,9 +406,9 @@ print("np.shape(Valid[1])",np.shape(valid_dataset_output))
 print("np.shape(Test[0])",np.shape(test_dataset_input))
 print("np.shape(Test[1])",np.shape(test_dataset_output))
 
-np.savez("train_dataset.npz",input = train_dataset_input,output = train_dataset_output )
-np.savez("valid_dataset.npz",input = valid_dataset_input,output = valid_dataset_output)
-np.savez("test_dataset.npz",input = test_dataset_input,output = test_dataset_output)
+np.savez(dire_prefix+"train_dataset.npz",input = train_dataset_input,output = train_dataset_output )
+np.savez(dire_prefix+"valid_dataset.npz",input = valid_dataset_input,output = valid_dataset_output)
+np.savez(dire_prefix+"test_dataset.npz",input = test_dataset_input,output = test_dataset_output)
 
 
 
