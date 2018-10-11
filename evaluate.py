@@ -133,7 +133,12 @@ class Eval:
         with open(store_direct+"save.csv",'w') as f:
             f_csv = csv.writer(f)
             # write the title line
-            header = ["id","group_type","predict accuracy","total_accuracy","tsne_x","tsne_y"]
+            header = ["id","group_type","prediction accuracy","total_accuracy","tsne_x","tsne_y"]
+            # add the headers of 20 rounds actual action and prediction action
+            for i in range(len(self.label[0])):
+                header.append("action_"+str(i)+"_prediction")
+                header.append("action_"+str(i)+"_actual")
+
             f_csv.writerow(header)
             for batches in range(len(self.prediction)):
                 row = []
@@ -144,6 +149,9 @@ class Eval:
                 row.append(tot_a) # total accuracy
                 row.append(self.tsne_Y[batches,0]) # tsne_x
                 row.append(self.tsne_Y[batches,1]) # tsne_y
+                for time_step in range(len(self.label[0])):
+                    row.append(self.prediction[batches,time_step])
+                    row.append(self.label[batches,time_step])
                 f_csv.writerow(row)
             f.close()
         return True
