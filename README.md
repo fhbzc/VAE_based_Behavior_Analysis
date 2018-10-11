@@ -15,10 +15,10 @@ run
 
      python GroupClassificationColor.py
    
-it should generate 3 files in ./data: 
-train_dataset.npz
-valid_dataset.npz
-test_dataset.npz
+it should generate 3 files in ./data:  
+train_dataset.npz  
+valid_dataset.npz  
+test_dataset.npz  
 
 How to train the model?
 ---------
