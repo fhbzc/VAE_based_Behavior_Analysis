@@ -26,8 +26,8 @@ run
 
      python rnn_train.py
 
- the trained variable should be stored in log folder in the same directory as rnn_train.py
-
+ the trained variables should be stored in ./log folder  
+ 
 How to get the classification image and inference?
 -----
 run 
