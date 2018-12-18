@@ -1,7 +1,7 @@
 # VAE_based_Behavior_Analysis
 
 
-Declaration: The code comes from a open-source project of Google(original link here https://github.com/tensorflow/magenta/tree/master/magenta/models/sketch_rnn)
+Declaration: The code comes from a open-source project of Google(original link here   https://github.com/tensorflow/magenta/tree/master/magenta/models/sketch_rnn)  
 I modify and apply it in agents behaviors analysis
 
 Updates on October 12, 2018
