@@ -4,7 +4,7 @@
 Declaration: The code comes from a open-source project of Google(original link here   https://github.com/tensorflow/magenta/tree/master/magenta/models/sketch_rnn)  
 I modify and apply it in agents behaviors analysis
 
-Updates on October 12, 2018
+Updated on October 12, 2018
 -----
 I change the directories of this project, move all datas into ./data/, and all log information will be shown in ./log, and all result(csv file, npy file and images) will be in ./result/
 
